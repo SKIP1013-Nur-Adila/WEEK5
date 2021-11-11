@@ -1,0 +1,94 @@
+package nWEEK5_SelfProgramming_naddyel;
+
+public class Java_break_and_continue {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+	//JAVA BREAK
+		System.out.println("\n");
+		for (int i = 0; i < 10; i++) {
+			  if (i == 6) {  //the result will not include number 4
+			    break;
+			  }
+			  System.out.println(i);
+			}
+	//JAVA CONTINUE
+		System.out.println("\n");
+		for (int i = 0; i < 10; i++) {
+			  if (i == 4) {
+			    continue;
+			  }
+			  System.out.println(i);
+			}
+	//BREAK AND CONTINUE
+	//break
+		System.out.println("\n");
+		int i = 0;
+		while (i < 10) {
+		  System.out.println(i);
+		  i++;
+		  if (i == 4) {
+		    break;
+		  }
+		}
+	//continue
+		System.out.println("\n");
+		int j = 0;
+		while (j < 10) {
+		  if (j == 4) {
+		    j++;
+		    continue;
+		  }
+		  System.out.println(j);
+		  j++;
+		}
+		
+		/*
+		 * 
+
+			0
+			1
+			2
+			3
+			4
+			5
+			
+			
+			0
+			1
+			2
+			3
+			5
+			6
+			7
+			8
+			9
+			
+			
+			0
+			1
+			2
+			3
+			
+			
+			0
+			1
+			2
+			3
+			5
+			6
+			7
+			8
+			9
+
+		 */
+				
+		
+		
+		
+		
+	}
+
+}

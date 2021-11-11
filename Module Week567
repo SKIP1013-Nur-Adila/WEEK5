@@ -1,0 +1,169 @@
+package nWEEK5_SelfProgramming_naddyel;
+				//assigned value
+
+public class Module_Week567 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+	//if statement
+		double y=15.0;
+		double x=25.0;
+		
+		
+		
+		if (y!=x)
+	     System.out.println("Result : y not equal x");
+		
+		if (y==x)
+		     System.out.println("Result : y not equal x");
+		//will not be executed 
+		
+	//block statement have {}
+		double total= 5;
+		double MAX=7;
+		
+		if (total < MAX)
+		{
+		   MAX = MAX-total;
+		   System.out.println("New Max is : " +MAX );
+		}
+		
+	//logical operator
+		final double balance=1000;
+		double amount=500;
+		double balance1=balance;
+		
+		if  ((amount <= 1000.0) && (amount <= balance))   //withdrawal more than 1000 is not allowed
+		{   
+			balance1 = balance - amount;  
+			System.out.println("Acct new balance =" + balance1);
+		}
+
+		
+	//if-else statement
+	
+		double OVERDRAFT_PENALTY=5;
+		
+		if (amount <= balance)  
+			balance1 = balance - amount;
+		else
+			balance1 = balance - OVERDRAFT_PENALTY;
+		System.out.println("Acct new balance =" + balance1);
+
+	//block statement
+		
+		if (amount <= balance1)
+		{   
+			balance1 = balance - amount;
+		System.out.println("Acct new balance = " + balance1);
+		}
+		else
+		{
+		      balance1 = balance - OVERDRAFT_PENALTY;
+			    System.out.println("TRANSACTION NOT ALLOWED");
+		} 
+
+		
+	//boolean operators
+		
+		int age= 15;   //change here
+		
+		if  ((age >= 25) && (age <= 50))
+		{ 
+			System.out.println("You are qualified to apply");
+		}
+		else 
+		{
+		     System.out.println("You are NOT qualified to apply"); 
+		}
+
+	//multiple selection
+		int a= 1; //change here
+		
+		if (a>=1)
+		{
+			  System.out.println ("The number you enter is :" + a);
+			  System.out.println ("You enter the positive number");	
+	  }		
+		else if (a<0)
+		{	
+			  System.out.println ("The number you enter is :" + a);
+			  System.out.println ("You enter the negative number");	
+	  }
+		else 
+		{	
+			  System.out.println ("The number you enter is :" + a);
+			  System.out.println ("You enter the zero number");	
+		}
+
+	//multiple selection
+		
+		int mark=70;
+		char grade ;
+		
+		if (mark >= 90)
+			  grade = 'A';
+			else if (mark >= 80)
+				grade = 'B';
+			else if (mark >= 70)
+				grade = 'C';
+			else if (mark >= 60)
+				grade = 'D';
+			else   
+			  grade = 'F';
+
+		System.out.println("grade : " + grade);
+		System.out.println("mark : " + mark);
+	
+		
+		
+	/*	
+		int mark=70;
+		char grade =0 ;
+		
+		if ((mark >= 90) && (mark <=100))
+			grade = 'A';
+		if ((mark >= 80) && (mark >= 89))
+			grade = 'B';
+		if ((mark >= 70) && (mark >= 79))
+			grade = 'C';
+		if ((mark >= 60) && (mark >= 69))
+			grade = 'D';
+		if ((mark >= 0) && (mark >= 59))
+			grade = 'F';
+
+		System.out.println("grade : " + grade);
+		System.out.println("mark : " + mark);
+	*/	
+		
+	//switch/break
+		
+		
+		
+		int m = 2;
+		switch (m)
+		{
+		 case 1 :
+		    System.out.println("m=1");
+		    break;
+		 case 2 :
+		    System.out.println("m=2"); 
+		    break;
+		 case 3 :
+		    System.out.println("m=3");
+		    break;
+		 default:
+		   System.out.println("default");}
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

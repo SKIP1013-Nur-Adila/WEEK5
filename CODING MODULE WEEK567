@@ -1,0 +1,40 @@
+package nWEEK5_SelfProgramming_naddyel;
+
+public class Module567_BlockStatement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//if-else statement
+		
+		final double balance=2000;
+		double amount=500;
+		double balance1=balance;
+		
+		
+
+		//block statement
+			System.out.println("Block statement 2");
+			
+			if (amount <= balance1)
+			{   
+				balance1 = balance - amount;
+			System.out.println("Acct new balance = " + balance1);
+			}
+			else if (amount>=balance)
+			{
+			      balance1 = balance - amount;
+				    System.out.println("TRANSACTION NOT ALLOWED");
+				   
+			} 
+			if (amount<=balance)
+	
+				balance1 = balance - amount;
+		    System.out.println("Acct new balance= " + balance1);
+		    
+
+		} 
+
+	}
+
+
